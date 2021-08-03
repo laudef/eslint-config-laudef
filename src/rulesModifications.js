@@ -1,3 +1,9 @@
+const regexToPatternString = function regexToPatternString(regex) {
+  // TODO: add check for flags
+
+  return regex.toString().replace(/(^\/|\/$)/g, '');
+};
+
 const rulesModifications = {
   indent: [null, null, {
     MemberExpression: 'off',
@@ -8,7 +14,7 @@ const rulesModifications = {
     // const shortFunctionName = function longFunctionName(
     // exports.shortMethodName = function longMethodName(
     //   shortMethodName: function longMethodName(
-    ignorePattern: '^.+(=|:)\sfunction\s.+\($',
+    ignorePattern: regexToPatternString(/^.+(=|:)\sfunction\s.+\($/),
     ignoreStrings: false,
     ignoreTemplateLiterals: false,
   }],
