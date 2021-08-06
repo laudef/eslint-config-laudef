@@ -20,7 +20,6 @@ const rulesModifications = {
   }],
   'newline-per-chained-call': 'off',
   'no-console': 'off',
-  'no-unused-vars': ['error', { argsIgnorePattern: '^next$' }],
 };
 
 module.exports = rulesModifications;
