@@ -14,7 +14,7 @@ const rulesModifications = {
     // const shortFunctionName = function longFunctionName(
     // exports.shortMethodName = function longMethodName(
     //   shortMethodName: function longMethodName(
-    ignorePattern: regexToPatternString(/^.+(=|:)\sfunction\s.+\($/),
+    ignorePattern: regexToPatternString(/^.+(=|:)(\sasync)?\sfunction\s.+\($/),
     ignoreStrings: false,
     ignoreTemplateLiterals: false,
   }],
