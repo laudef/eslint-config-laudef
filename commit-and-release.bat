@@ -1,2 +1,0 @@
-git add . && git commit -m "Fix ``commit-and-release.bat`` so that it stages new files" && git tag -a v1.3.2 -m "Fix ``commit-and-release.bat`` so that it stages new files" && git push && git push --tags
-pause
